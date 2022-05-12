@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+bridge_crogecoin_sol = "25GcePJVF3P4WGfeRyf8stMVkh7vCFjuqi7LbXcaCRbp"
+
+[programs.devnet]
+bridge_crogecoin_sol = "25GcePJVF3P4WGfeRyf8stMVkh7vCFjuqi7LbXcaCRbp"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
